@@ -1,14 +1,19 @@
 var apiKey = "117ee126a082693cf3f030ee7ea96dde";
-var city= [];
+var city = document.getElementById("city-input");
 var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q="city" + "&appid=" + "117ee126a082693cf3f030ee7ea96dde';
-var fetchBtn = document.querySelector('btn');
+var fetchBtn = document.querySelector('.btn');
 var repoList = document.querySelector('ul');
 var icon = document.querySelector('weather-icon');
-var tempEl = document.querySelector('temperature-value p');
+var temp = document.querySelector('#temp');
 var unit = "imperial"
 
 var citySearchEl = document.querySelector('#city-search');
 var cityListEl = document.querySelector('#city-list');
+var cityName = document.querySelector('#cityName');
+var humidity = document.querySelector('#humidity');
+var windSpeed = document.querySelector('#windSpeed');
+var date = document.querySelector('#date');
+
 
 
 // var weather ={
@@ -47,31 +52,49 @@ $('input[name="city-input"]').val('');
 
 
 
-function getApi(){
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey +"&units=imperial";  
-
+function getApi(e){
+    e.preventDefault();
+    console.log("getAPI")
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city.value + "&appid=" + apiKey + "&units=imperial";  
+    var forecastQueryURL = "http://api.openweathermap.org/data/2.5/forecast?id=" + city.value + "&appid=" + apiKey + "&units=imperial";
    
-    //api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+  
 
     fetch(queryURL)
     .then(function (response){
         return response.json();
     })
 .then(function (data){
-    for (var i = 0; i < data.length; i++) {
-    repoList.textContent = data[i].html_url;
-    repoList.appendChild(repoList);    
-    }
+    cityName.textContent = data.name 
+    temp.textContent = "Temp: " + data.main.temp + "F"
+    windSpeed.textContent = "Wind Speed:" + data.wind.speed + "MPH"
+    humidity.textContent = "Humidity:" + data.main.humidity + "%"
+    var time = data.dt
+    date.textContent = moment.unix(time).format("MM-DD-YYYY")
+
+   
+    console.log(time)
+    console.log(moment.unix(time).format("MM-DD-YYYY"))
+
+
+    console.log(data.name);
+    console.log(data);
+    console.log(data.wind.speed);
+    console.log(data.main.temp);
+    console.log(data.main.humidity);
+
+
 });
 
 }
 
 //fetch request gets a list of temp, wind, and humidity data
-fetchBtn.addEventListener('click',getApi);
+fetchBtn.addEventListener('click', function(e){
+    getApi(e)
+});
 
 
 
-// api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 
 

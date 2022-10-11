@@ -10,8 +10,8 @@
 }
 
 body{
-    background: #1746A2;
-    color:#FFF7E9;
+    background: --white;
+    color:#1746A2;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
   }
