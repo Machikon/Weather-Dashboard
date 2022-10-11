@@ -1,0 +1,23 @@
+/* 
+    --primaryblue: #1746A2;
+    --secondaryblue: #5F9DF7;
+    --white: #FFF7E9;
+    --orange: #FF731D; */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background: #1746A2;
+    color:#FFF7E9;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+}
+.container{
+    background-color: var(--primaryblue);
+    color: var(--white);
+    text-align: center;
+}
