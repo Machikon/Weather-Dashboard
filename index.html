@@ -25,14 +25,17 @@
                 <input type="text" class="form-input form-control-lg" id="city-input" name="city" placeholder="Enter a city">
                 <button class="btn btn-info btn-lg" id="fetch-button">Search</button> 
                 </form>
-            </div>   
+            </div>  
+            <div>
                 <ul id="city-list"></ul>
+            </div> 
         </div>  
     </div>            
   
                 
-    <div class="container m-10">
-        <div> 
+    <div class="container">
+     <div class="search-results">
+        <div>
             <h1 id="cityName"></h1>
             <h2 id="date"></h2>
             <h2 id="temp"></h2>
@@ -40,58 +43,64 @@
             <h2 id="windSpeed"></h2>
         </div>
     </div>
+    </div>
          
         <div class="row justify-content">
-            <div class="'card">
-                <h3 class="card-header ml-5 mt-10"> 5-Day Forecast:</h3>
-            </div>
+           <h3 class="card-header ml-5 mt-10"> 5-Day Forecast:</h3>
+           
             
     <div class="container mt-10">   
         <div class="row">       
-            <div class="col-lg-8 card-deck">
+            <div class="col-lg-12 card-deck">
                 <div class="card bg-info">
-                  <div class="card-body text-center">
-                    <p class="card-text">Forecast date</p>
-                    <div class="weather-icon"><img/></div>
+                    
+                  <div class="card-body-0 text-center">
+                    <p class="card-text-0"></p>
+                    <hr>
+                    <img class='weather-icon'><img/>
                     <div class="temperature-value"><p> <span>F</span></p></div>
                     <p class="wind-text">Wind</p>
                     <p class="humidity-text">Humidity</p>
                   </div>
                 </div>
                  <div class="card bg-primary">
-                    <div class="card-body text-center">
-                      <p class="card-text">Forecast date</p>
-                      <div class="weather-icon"><img/></div>
-                      <div class="temperature-value"><p> <span>F</span></p></div>
-                      <p class="wind-text">Wind</p>
-                      <p class="humidity-text">Humidity</p>
+                    <div class="card-body-1 text-center">
+                      <p class="card-text-1"></p>
+                      <hr>
+                      <img class="weather-icon-1"><img/>
+                      <div class="temperature-value-1"><p> <span>F</span></p></div>
+                      <p class="wind-text-1">Wind</p>
+                      <p class="humidity-text-1">Humidity</p>
                     </div>
                   </div>
                   <div class="card bg-info">
-                    <div class="card-body text-center">
-                      <p class="card-text">Forecast date</p>
-                      <div class="weather-icon"><img/></div>
-                      <div class="temperature-value"><p> <span>F</span></p></div>
+                    <div class="card-body-2 text-center">
+                      <p class="card-text-2">Forecast date</p>
+                      <hr>
+                      <div class="weather-icon-2"><img/>
+                      <div class="temperature-value-2"><p> <span>F</span></p></div>
                       <p class="wind-text">Wind</p>
                       <p class="humidity-text">Humidity</p>
                     </div>
                   </div>
                   <div class="card bg-primary">
-                    <div class="card-body text-center">
-                      <p class="card-text">Forecast date</p>
-                      <div class="weather-icon"><img/></div>
-                      <div class="temperature-value"><p> <span>F</span></p></div>
-                      <p class="wind-text">Wind</p>
-                      <p class="humidity-text">Humidity</p>
+                    <div class="card-body-3 text-center">
+                      <p class="card-text-3">Forecast date</p>
+                      <hr>
+                      <img class="weather-icon-3"><img/>
+                      <div class="temperature-value-3"><p> <span>F</span></p></div>
+                      <p class="wind-text-3">Wind</p>
+                      <p class="humidity-text-3">Humidity</p>
                     </div>
                   </div>
                   <div class="card bg-info">
-                    <div class="card-body text-center">
-                      <p class="card-text">Forecast date</p>
-                      <div class="weather-icon"><img/></div>
-                      <div class="temperature-value"><p> <span>F</span></p></div>
-                      <p class="wind-text">Wind</p>
-                      <p class="humidity-text">Humidity</p>
+                    <div class="card-body-4 text-center">
+                      <p class="card-text-4">Forecast date</p>
+                      <hr>
+                      <div class="weather-icon-4"><img/>
+                      <div class="temperature-value-4"><p> <span>F</span></p></div>
+                      <p class="wind-text-4">Wind</p>
+                      <p class="humidity-text-4">Humidity</p>
                     </div>
                   </div>
                 </div>
@@ -99,10 +108,7 @@
     </div>
 
     </main>
-    
-
-  
-    
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
  <script src="./assets/js/script.js"></script>

@@ -10,14 +10,16 @@
 }
 
 body{
-    background: --white;
-    color:#1746A2;
+    background: --#5F9DF7;
+    color: black;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
   }
-}
+
 .container{
-    background-color: var(--primaryblue);
-    color: var(--white);
+    width: 500;
+    margin-left: 10;
     text-align: center;
+    border: #5F9DF7;
+
 }
