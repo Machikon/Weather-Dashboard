@@ -9,9 +9,9 @@ This application allows users to quickly view the current weather conditions and
 - API - openweathermap.org
 
 
-## GitHub repo URL:
-    https://github.com/Machikon/Weather-Dashboard
+## GitHub Pages URL:
+    https://machikon.github.io/Weather-Dashboard/
 
 ## screenshot: 
-image.png
+
 
