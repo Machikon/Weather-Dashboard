@@ -82,50 +82,51 @@ function getApi(e){
 
 }
 
-
-// For 5-day forecast - city as your parameter here 
-// function getApi(e){
-//     e.preventDefault();
-//     console.log("getAPI") 
-    
-    var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=" + city.value + "&appid=" + apiKey + "&units=imperial";
-       
-for(var i=0; i<5; i++){
-    var forecast = $('input[name="city-input"]').val('');
-}
-
-   return fetch(forecastURL)
-    .then(function (response){
-        return response.json();
-    })
-.then(function (data){
-    
-    temp.textContent = "Temp: " + data.main.temp + "F"
-    windSpeed.textContent = "Wind Speed:" + data.wind.speed + "MPH"
-    humidity.textContent = "Humidity:" + data.main.humidity + "%"
-    var time = data.dt
-    date.textContent = moment.unix(time).format("MM-DD-YYYY")
-
-   
-    console.log(time)
-    console.log(moment.unix(time).format("MM-DD-YYYY"))
-    console.log(data.name);
-    console.log(data);
-    console.log(data.wind.speed);
-    console.log(data.main.temp);
-    console.log(data.main.humidity);
-
-
-});
-
-
-
-
-
 //fetch request gets a list of temp, wind, and humidity data
 fetchBtn.addEventListener('click', function(e){
     getApi(e)
 });
+
+
+// For 5-day forecast - city as your parameter here 
+// function getApi(e){
+//     e.preventDefault();
+// //     console.log("getAPI") 
+    
+//     var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=" + city.value + "&appid=" + apiKey + "&units=imperial";
+       
+// // for(var i=0; i<5; i++){
+// //     var forecast = $('input[name="city-input"]').val('');
+// // }
+
+//    return fetch(forecastURL)
+//     .then(function (response){
+//         return response.json();
+//     })
+// .then(function (data){
+    
+//     temp.textContent = "Temp: " + data.main.temp + "F"
+//     windSpeed.textContent = "Wind Speed:" + data.wind.speed + "MPH"
+//     humidity.textContent = "Humidity:" + data.main.humidity + "%"
+//     var time = data.dt
+//     date.textContent = moment.unix(time).format("MM-DD-YYYY")
+
+   
+//     console.log(time)
+//     console.log(moment.unix(time).format("MM-DD-YYYY"))
+//     console.log(data.name);
+//     console.log(data);
+//     console.log(data.wind.speed);
+//     console.log(data.main.temp);
+//     console.log(data.main.humidity);
+
+
+// });
+
+
+
+
+
 
 
 
