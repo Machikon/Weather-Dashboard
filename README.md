@@ -1,5 +1,5 @@
 # Weather-Dashboard
-This application allows users to quickly view the current weather conditions and the next five days. First. users will be presented with a city search. Once a city has been entered and submitted, API is enter a city one at a time in the provided field. API fetch will be triggered to receive 5-day forecast information.  
+This application allows users to quickly view the current weather conditions and the next five days. First. users will be presented with a city search. Once a city has been entered and submitted, API will enter a city one at a time in the provided field. API fetch will be triggered to receive 5-day forecast information.  
 
 ## Technologies used
 - html
@@ -9,4 +9,9 @@ This application allows users to quickly view the current weather conditions and
 - API - openweathermap.org
 
 
+## GitHub repo URL:
+    https://github.com/Machikon/Weather-Dashboard
+
 ## screenshot: 
+image.png
+
