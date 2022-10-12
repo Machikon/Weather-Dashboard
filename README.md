@@ -13,5 +13,6 @@ This application allows users to quickly view the current weather conditions and
     https://machikon.github.io/Weather-Dashboard/
 
 ## screenshot: 
+![image](https://user-images.githubusercontent.com/106935371/195258816-2d297321-ff5b-4a10-8a11-81407213f16a.png)
 
 
