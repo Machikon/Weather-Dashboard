@@ -13,5 +13,5 @@ This application allows users to quickly view the current weather conditions and
     https://github.com/Machikon/Weather-Dashboard
 
 ## screenshot: 
-image.png
+
 
