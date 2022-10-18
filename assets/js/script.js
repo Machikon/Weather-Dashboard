@@ -94,21 +94,21 @@ fetchBtn.addEventListener('click', function(e){
 
 
 
-api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+// api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
-let button = document.getElementById("get-location");
-let latText = document.getElementById("latitude");
-let longText = document.getElementById("longitude");
+// let button = document.getElementById("get-location");
+// let latText = document.getElementById("latitude");
+// let longText = document.getElementById("longitude");
 
-button.addEventListener("click", () => {
-  navigator.geolocation.getCurrentPosition((position) => {
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
+// button.addEventListener("click", () => {
+//   navigator.geolocation.getCurrentPosition((position) => {
+//     let lat = position.coords.latitude;
+//     let long = position.coords.longitude;
 
-    latText.innerText = lat.toFixed(2);
-    longText.innerText = long.toFixed(2);
-  });
-});
+//     latText.innerText = lat.toFixed(2);
+//     longText.innerText = long.toFixed(2);
+//   });
+// });
 
 
 
